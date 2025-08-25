@@ -1,23 +1,33 @@
 {
   "name": "first-py",
   "version": "1.0.0",
-  "description": "",
+  "description": "Vite + TypeScript + Brython + Tailwind stack",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && python bundle.py",
-    "preview": "vite preview"
+    "build": "python bundle.py && vite build",
+    "preview": "vite preview",
+    "check:ts": "tsc --noEmit",
+    "check:py": "pyright"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "vite",
+    "typescript",
+    "brython",
+    "tailwind",
+    "python"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
   "dependencies": {
     "@devwareng/vanilla-ts": "^1.2.85",
     "@tailwindcss/vite": "^4.1.12",
-    "@types/node": "^24.3.0",
-    "path": "^0.12.7",
     "tailwindcss": "^4.1.12",
     "vite": "^7.1.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "path": "^0.12.7"
   }
 }
