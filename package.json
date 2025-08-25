@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "python bundle.py && vite build",
+    "postinstall": "apt-get update && apt-get install -y python3",
+    "build": "npx postinstall python bundle.py && vite build",
     "preview": "vite preview",
     "check:ts": "tsc --noEmit",
     "check:py": "pyright"
