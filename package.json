@@ -1,0 +1,23 @@
+{
+  "name": "first-py",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && python bundle.py",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@devwareng/vanilla-ts": "^1.2.85",
+    "@tailwindcss/vite": "^4.1.12",
+    "@types/node": "^24.3.0",
+    "path": "^0.12.7",
+    "tailwindcss": "^4.1.12",
+    "vite": "^7.1.3"
+  }
+}

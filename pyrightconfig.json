@@ -1,0 +1,12 @@
+{
+    "include": [
+        "src"
+    ],
+    "extraPaths": [
+        "typings",
+        "browser",
+        "python"
+    ],
+    "typeCheckingMode": "strict",
+    "reportMissingImports": false
+}
