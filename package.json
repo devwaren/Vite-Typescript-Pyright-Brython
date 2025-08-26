@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npx tsx bundle.ts && vite build",
+    "build": "vite build && npx tsx bundle.ts",
     "preview": "vite preview"
   },
   "keywords": [],
