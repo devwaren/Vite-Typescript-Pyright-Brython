@@ -1,5 +1,5 @@
 
-import { html, useTSComponent, useTSElements } from '@devwareng/vanilla-ts'
+import { html, useTSAnchorMount, useTSComponent, useTSElements } from '@devwareng/vanilla-ts'
 import { Router } from './routes/router'
 
 export default function Start(DOM: HTMLElement) {
@@ -9,7 +9,6 @@ export default function Start(DOM: HTMLElement) {
         `)
 
     useTSComponent("router", DOM, Router)
-
-
+    useTSAnchorMount()
     return ui
 }

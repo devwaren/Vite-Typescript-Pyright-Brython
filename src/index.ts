@@ -1,5 +1,5 @@
 import "./css/index.css"
-import { useInitialDOM, useTSloadBrython, useTSAnchorMount } from "@devwareng/vanilla-ts"
+import { useInitialDOM, useTSloadBrython } from "@devwareng/vanilla-ts"
 import Start from "./Start";
 
 async function main() {
@@ -11,8 +11,6 @@ async function main() {
         window.onerror = () => true;
     }
 
-    // Mount anchors no reload
-    useTSAnchorMount();
 }
 
 main();
