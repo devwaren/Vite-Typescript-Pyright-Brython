@@ -28,7 +28,6 @@ export default function Home(DOM: HTMLElement) {
         `
     );
 
-    // Load Python logic after rendering UI
     loadPyFiles("main.py");
 
     return ui;

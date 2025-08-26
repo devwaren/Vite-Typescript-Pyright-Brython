@@ -1,8 +1,9 @@
-from browser import document
+from browser import document, DOMEvent
 
 counter = 0
 
-def increment() -> None:
+
+def increment(event: DOMEvent) -> None:
     global counter
     counter += 1
     document["btn"].text = f"Counter: {counter}"
